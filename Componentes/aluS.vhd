@@ -1,0 +1,24 @@
+-- Laboratorio 4: Aritmética binaria con VHDL
+-- Autores: David Carneros Prado y Maria Espinosa Astilleros
+-- Desarrollo: En este componente realizamos la operación suma. Posteriormente lo incluiremos en lab4_1.vhd 
+--             para asignarlo a los elementos de la placa que realizarán su función. 
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_signed.all;
+
+ENTITY aluS IS 
+    PORT (X : IN STD_LOGIC_VECTOR(0 to 3);          -- primer sumando
+          Y : IN STD_LOGIC_VECTOR(0 to 3);          -- segundo sumando
+          Cin : IN STD_LOGIC;                       -- acarreo de entrada
+          Cout : OUT STD_LOGIC;                     -- acarreo de salida
+          R : OUT STD_LOGIC_VECTOR(3 downto 0));    -- resultado suma
+END aluS;
+
+
+ARCHITECTURE AluSFunc OF aluS IS 
+SIGNAL Sum : STD_LOGIC_VECTOR(4 DOWNTO 0) ;         -- tamaño de la suma más el acarreo de salida
+BEGIN 
+	 Sum <= ('0' & X) + ('0' & Y) + Cin;            -- realizamos la suma
+	 R <= Sum(3 downto 0);                          -- asignamos las 4 primeras posiciones al resultado
+	 Cout <= Sum(4);                                -- asignamos la 5º posición al acarreo de salida 
+END AluSFunc; 

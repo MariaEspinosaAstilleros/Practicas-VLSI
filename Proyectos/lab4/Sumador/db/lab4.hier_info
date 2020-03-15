@@ -1,0 +1,38 @@
+|lab4
+DIP_SW[8] => aluS:o.Y[3]
+DIP_SW[7] => aluS:o.Y[2]
+DIP_SW[6] => aluS:o.Y[1]
+DIP_SW[5] => aluS:o.Y[0]
+DIP_SW[4] => aluS:o.X[3]
+DIP_SW[3] => aluS:o.X[2]
+DIP_SW[2] => aluS:o.X[1]
+DIP_SW[1] => aluS:o.X[0]
+KEY_EX[1] => ~NO_FANOUT~
+KEY_EX[0] => aluS:o.Cin
+LED[0] <= aluS:o.R[0]
+LED[1] <= aluS:o.R[1]
+LED[2] <= aluS:o.R[2]
+LED[3] <= aluS:o.R[3]
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= <GND>
+LED[7] <= aluS:o.Cout
+
+
+|lab4|aluS:o
+X[3] => Add0.IN4
+X[2] => Add0.IN3
+X[1] => Add0.IN2
+X[0] => Add0.IN1
+Y[3] => Add0.IN8
+Y[2] => Add0.IN7
+Y[1] => Add0.IN6
+Y[0] => Add0.IN5
+Cin => Add1.IN10
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+R[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
