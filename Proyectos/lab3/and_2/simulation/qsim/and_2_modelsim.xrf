@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/USUARIO/Desktop/UNIVERSIDAD/4º DE CARRERA/2º CUATRIMESTRE/DISEÑO VLSI/Practicas/Lab 3/and_2/Waveform.vwf
+source_file = 1, C:/Users/USUARIO/Desktop/UNIVERSIDAD/4º DE CARRERA/2º CUATRIMESTRE/DISEÑO VLSI/Practicas/Lab 3/and_2/and_2.bdf
+design_name = hard_block
+design_name = and_2
+instance = comp, \LED[0]~output\, LED[0]~output, and_2, 1
+instance = comp, \KEY[1]~input\, KEY[1]~input, and_2, 1
+instance = comp, \KEY[0]~input\, KEY[0]~input, and_2, 1

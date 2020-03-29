@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/USUARIO/Desktop/UNIVERSIDAD/4º DE CARRERA/2º CUATRIMESTRE/DISEÑO VLSI/Practicas/Lab 3/and_2/simulation/qsim
+Eand_2
+Z0 w1582730604
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
+Z7 dE:/VLSI/Lab3/Proyecto1/simulation/qsim
+Z8 8and_2.vho
+Z9 Fand_2.vho
+l0
+L77
+VkMTXe2L^J2E:l=F:JFZ^o3
+!s100 XGiBR4ATo>W=]^E0MCQR22
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1582736617
+!i10b 1
+Z12 !s108 1582736616.000000
+Z13 !s90 -work|work|and_2.vho|
+Z14 !s107 and_2.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 and_2 0 22 kMTXe2L^J2E:l=F:JFZ^o3
+l114
+L90
+V^Vm9z1P4B=O>LRCK9Y<Y03
+!s100 YFIR@c64k?P74oLgf^_T51
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eand_2_vhd_vec_tst
+R0
+R4
+R5
+R7
+Z17 8Waveform.vwf.vht
+Z18 FWaveform.vwf.vht
+l0
+L31
+VQQz]_czJ:bCEM`J7X7DhU2
+!s100 PIeEB[]am9c4Em1L3IMXg1
+R10
+32
+R11
+!i10b 1
+Z19 !s108 1582736617.000000
+Z20 !s90 -work|work|Waveform.vwf.vht|
+Z21 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Aand_2_arch
+R4
+R5
+Z22 DEx4 work 17 and_2_vhd_vec_tst 0 22 QQz]_czJ:bCEM`J7X7DhU2
+l44
+L33
+Z23 VJ5AWcPe?jgC6?kQ>hRkeP3
+Z24 !s100 ZhHDI8g[WE;aPk=7V1eo[0
+R10
+32
+R11
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R15
+R16
+Ehard_block
+R0
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

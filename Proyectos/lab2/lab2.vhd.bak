@@ -1,0 +1,23 @@
+-- Laboratorio 2: Comprobacion de E/S en protoboard
+-- Autores: David Carneros Prado y María Espinosa Astilleros
+-- Desarrollo: Elaborar un programa que permita que cada uno de los pulsadores externos active uno de los colores
+--             (rojo/verde) del led bicolor externo. El mismo programa debe permitir conectar cada uno de los dip 
+--             switches externos a un segmento distinto del display externo (incluyendo el led DP)
+
+LIBRARY ieee;
+USE ieee.std_logic_1644.all;
+
+ENTITY lab2 IS
+    PORT(
+        p0, p1      : IN STD_LOGIC;                  --pulsadores
+        red, green  : OUT STD_LOGIC;                 --led bicolor externo
+        dip_switch  : IN STD_LOGIC_VECTOR(1 TO 8);   -- dip switch
+        display     : OUT STD_LOGIC_VECTOR(1 TO 8)); -- display externo
+END lab2;
+
+ARCHITECTURE LogicFunc OF lab2 IS 
+BEGIN 
+    red <= p0;                  -- pulsador 0 conectado al led rojo
+    green <= p1;                -- pulsador 1 conectado al led verde
+    display <= NOT dip_switch;  -- display externo conectado a los dip switches
+END LogicFunc;
