@@ -12,8 +12,7 @@ Elaborar un programa de prueba que permita que cada uno de los pulsadores extern
 ## Entregable: 
 
 Todos los ficheros se enviarán en un único archivo en formato zip consistente en:
+* Ficheros del proyecto Quartus.
+* Vídeo tutorial de realización y ejecución del proyecto (duración máxima por vídeo: 3 min.).
 
-## Ficheros del proyecto Quartus.
-
-Vídeo tutorial de realización y ejecución del proyecto (duración máxima por vídeo: 3 min.).
 Nota: Consultar la documentación sobre la conexión de dispositivos externos de E/S a la tarjeta DEO-nano mediante protoboard.
