@@ -17,9 +17,9 @@ END mux_4x1;
 ARCHITECTURE funcLab5 OF mux_4x1 IS 
 BEGIN 
     WITH KEY_EX SELECT
-        VERDE <= DIP_SW(5) WHEN "00",
-                 DIP_SW(6) WHEN "01",
-                 DIP_SW(7) WHEN "10",
-                 DIP_SW(8) WHEN OTHERS; 
+        VERDE <= DIP_SW(5) WHEN "00",        -- DIP_SW[5] al led verde cuando KEY_EX[0] y KEY_EX[1] están a 0
+                 DIP_SW(6) WHEN "01",        -- DIP_SW[6] al led verde cuando KEY_EX[0] está a 0 y KEY_EX[1] está a 1
+                 DIP_SW(7) WHEN "10",        -- DIP_SW[7] al led verde cuando KEY_EX[0] está a 1 y KEY_EX[1] está a 0
+                 DIP_SW(8) WHEN OTHERS;      -- DIP_SW[8] al led verde cuando KEY_EX[0] y KEY_EX[1] están a 1
 END funcLab5;
     
