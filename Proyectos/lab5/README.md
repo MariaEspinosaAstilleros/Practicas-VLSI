@@ -3,9 +3,9 @@
 ## Objetivo: 
 
 Realizar el diseño de un MUX 4x1 mediante dos procedimientos (cada procedimiento se debe implementar en un proyecto diferente):
+1. Asignación de señal seleccionada.
+2. Mediante una red de 3 instancias de un componente MUX 2x1.
 
-Asignación de señal seleccionada.
-Mediante una red de 3 instancias de un componente MUX 2x1.
 Para el test del multiplexor las entradas de datos se conectaran a los DIP_SW[5-8], la entrada de selección a KEY_EX[0-1] y la salida a VERDE. Para que sea intuitiva la generación de códigos de selección tomar como señal más significativa KEY_EX[0].
 
 ## Nota: 
