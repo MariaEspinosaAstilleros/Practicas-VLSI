@@ -1,0 +1,5 @@
+-- Laboratorio 5: Diseño de multiplexor 4x1
+-- Autores: David Carneros Prado y Maria Espinosa Astilleros
+-- Desarrollo: Realizaremos un multiplezador 4x1 a partir de una red de 3 instancias de un componente MUX 2x1. 
+--             Las entradas de datos se conectarán a los DIP_SW[5-8], la entrada de selección a KEY_EX[0-1] 
+--             y la salida a VERDE. La señal más significativa será KEY_EX[0]
