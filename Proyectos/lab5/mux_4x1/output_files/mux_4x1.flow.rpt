@@ -1,21 +1,75 @@
 Flow report for mux_4x1
-Sat Apr 04 19:12:27 2020
+Sat Apr 04 19:35:16 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
-  1. Legal Notice
-  2. Flow Summary
-  3. Flow Settings
-  4. Flow Non-Default Global Settings
-  5. Flow Elapsed Time
-  6. Flow OS Summary
-  7. Flow Log
-  8. Flow Messages
-  9. Flow Suppressed Messages
+  1. EDA Netlist Writer Summary
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Summary
+  4. EDA Netlist Writer Summary
+  5. Legal Notice
+  6. Flow Summary
+  7. Flow Settings
+  8. Flow Non-Default Global Settings
+  9. Flow Elapsed Time
+ 10. Flow OS Summary
+ 11. Flow Log
+ 12. Flow Messages
+ 13. Flow Suppressed Messages
 
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Sat Apr 04 19:35:16 2020 ;
+; Revision Name             ; mux_4x1                               ;
+; Top-level Entity Name     ; mux_4x1                               ;
+; Family                    ; Cyclone IV E                          ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                              ;
++---------------------------+---------------------------------------------+
+; EDA Netlist Writer Status ; Successful - Sat Apr 04 19:30:24 2020       ;
+; Revision Name             ; mux_4x1                                     ;
+; Top-level Entity Name     ; mux_4x1                                     ;
+; Family                    ; Cyclone IV E                                ;
+; Simulation Files Creation ; Successful                                  ;
+; Flow Status               ; Successful - Sat Apr 04 19:35:16 2020       ;
+; Quartus Prime Version     ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
++---------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                              ;
++---------------------------+---------------------------------------------+
+; EDA Netlist Writer Status ; Successful - Sat Apr 04 19:29:41 2020       ;
+; Revision Name             ; mux_4x1                                     ;
+; Top-level Entity Name     ; mux_4x1                                     ;
+; Family                    ; Cyclone IV E                                ;
+; Simulation Files Creation ; Successful                                  ;
+; Flow Status               ; Successful - Sat Apr 04 19:30:24 2020       ;
+; Quartus Prime Version     ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
++---------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                              ;
++---------------------------+---------------------------------------------+
+; EDA Netlist Writer Status ; Successful - Sat Apr 04 19:28:41 2020       ;
+; Revision Name             ; mux_4x1                                     ;
+; Top-level Entity Name     ; mux_4x1                                     ;
+; Family                    ; Cyclone IV E                                ;
+; Simulation Files Creation ; Successful                                  ;
+; Flow Status               ; Successful - Sat Apr 04 19:29:41 2020       ;
+; Quartus Prime Version     ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
++---------------------------+---------------------------------------------+
 
 
 ----------------
@@ -40,7 +94,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 04 19:12:24 2020       ;
+; Flow Status                        ; Successful - Sat Apr 04 19:28:41 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; mux_4x1                                     ;
 ; Top-level Entity Name              ; mux_4x1                                     ;
@@ -95,7 +149,15 @@ refer to the applicable agreement for further details.
 ; Fitter               ; 00:00:07     ; 1.0                     ; 5640 MB             ; 00:00:04                           ;
 ; Assembler            ; 00:00:02     ; 1.0                     ; 4679 MB             ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4806 MB             ; 00:00:01                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:25                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4629 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4629 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4629 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4629 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4644 MB             ; 00:00:00                           ;
+; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,6 +170,14 @@ refer to the applicable agreement for further details.
 ; Fitter               ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -118,6 +188,14 @@ quartus_map --read_settings_files=on --write_settings_files=off mux_4x1 -c mux_4
 quartus_fit --read_settings_files=off --write_settings_files=off mux_4x1 -c mux_4x1
 quartus_asm --read_settings_files=off --write_settings_files=off mux_4x1 -c mux_4x1
 quartus_sta mux_4x1 -c mux_4x1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_4x1 -c mux_4x1 --vector_source=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf --testbench_file=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ mux_4x1 -c mux_4x1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_4x1 -c mux_4x1 --vector_source=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf --testbench_file=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ mux_4x1 -c mux_4x1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_4x1 -c mux_4x1 --vector_source=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf --testbench_file=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ mux_4x1 -c mux_4x1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_4x1 -c mux_4x1 --vector_source=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf --testbench_file=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ mux_4x1 -c mux_4x1
 
 
 

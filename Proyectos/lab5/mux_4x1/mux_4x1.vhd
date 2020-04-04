@@ -9,7 +9,7 @@ USE ieee.std_logic_1164.all;
 
 ENTITY mux_4x1 IS 
     PORT(
-        DIP_SW: IN STD_LOGIC_VECTOR(5 TO 8); --dip switches
+        DIP_SW: IN STD_LOGIC_VECTOR(5 TO 8); --dip switches DIP_SW[5-8]
         KEY_EX: IN STD_LOGIC_VECTOR(0 TO 1); --pulsadores KEY_EX[0] y KEY_EX[1]
         VERDE:  OUT STD_LOGIC);              --led verde
 END mux_4x1; 
