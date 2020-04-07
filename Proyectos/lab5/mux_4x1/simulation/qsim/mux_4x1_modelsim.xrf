@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf
 source_file = 1, E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/mux_4x1.vhd
 source_file = 1, e:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, e:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

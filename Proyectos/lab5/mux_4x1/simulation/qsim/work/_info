@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dE:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim
 Ehard_block
-Z1 w1586021715
+Z1 w1586243764
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ VOgIg9T_BR7joedFDVM>H13
 !s100 A`ID_i56<Ua56=ZD=[EG=2
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1586021716
+Z11 !s110 1586243769
 !i10b 1
-Z12 !s108 1586021716.000000
+Z12 !s108 1586243768.000000
 Z13 !s90 -work|work|mux_4x1.vho|
 Z14 !s107 mux_4x1.vho|
 !i113 1
@@ -103,7 +103,7 @@ R14
 R15
 R16
 Emux_4x1_vhd_vec_tst
-Z17 w1586021713
+Z17 w1586243760
 R5
 R6
 R0
@@ -117,27 +117,27 @@ R10
 32
 R11
 !i10b 1
-R12
-Z20 !s90 -work|work|Waveform.vwf.vht|
-Z21 !s107 Waveform.vwf.vht|
+Z20 !s108 1586243769.000000
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
 !i113 1
 R15
 R16
 Amux_4x1_arch
 R5
 R6
-Z22 DEx4 work 19 mux_4x1_vhd_vec_tst 0 22 XV6@=IYAHhk[5b]8Uda4K0
+Z23 DEx4 work 19 mux_4x1_vhd_vec_tst 0 22 XV6@=IYAHhk[5b]8Uda4K0
 l46
 L33
-VnjIJzA63ebW06FYE54WNX3
-!s100 4][J]QJLnBdPa8^YEN:dJ1
+VVGo6ZKFfhf5DXeK<3]Fzd2
+!s100 lWV_RX`Sz[T3la`<QCFK13
 R10
 32
 R11
 !i10b 1
-R12
 R20
 R21
+R22
 !i113 1
 R15
 R16

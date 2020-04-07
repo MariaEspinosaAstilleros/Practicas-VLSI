@@ -1,5 +1,5 @@
 EDA Netlist Writer report for mux_4x1
-Sat Apr 04 19:35:16 2020
+Tue Apr 07 09:16:05 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -11,110 +11,113 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   3. EDA Netlist Writer Summary
   4. EDA Netlist Writer Summary
   5. EDA Netlist Writer Summary
-  6. Legal Notice
-  7. Flow Summary
-  8. Flow Settings
-  9. Flow Non-Default Global Settings
- 10. Flow Elapsed Time
- 11. Flow OS Summary
- 12. Flow Log
- 13. Analysis & Synthesis Summary
- 14. Analysis & Synthesis Settings
- 15. Parallel Compilation
- 16. Analysis & Synthesis Source Files Read
- 17. Analysis & Synthesis Resource Usage Summary
- 18. Analysis & Synthesis Resource Utilization by Entity
- 19. General Register Statistics
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
- 23. Fitter Summary
- 24. Fitter Settings
- 25. Parallel Compilation
- 26. Ignored Assignments
- 27. Incremental Compilation Preservation Summary
- 28. Incremental Compilation Partition Settings
- 29. Incremental Compilation Placement Preservation
- 30. Pin-Out File
- 31. Fitter Resource Usage Summary
- 32. Fitter Partition Statistics
- 33. Input Pins
- 34. Output Pins
- 35. Dual Purpose and Dedicated Pins
- 36. I/O Bank Usage
- 37. All Package Pins
- 38. I/O Assignment Warnings
- 39. Fitter Resource Utilization by Entity
- 40. Delay Chain Summary
- 41. Pad To Core Delay Chain Fanout
- 42. Routing Usage Summary
- 43. LAB Logic Elements
- 44. LAB Signals Sourced
- 45. LAB Signals Sourced Out
- 46. LAB Distinct Inputs
- 47. I/O Rules Summary
- 48. I/O Rules Details
- 49. I/O Rules Matrix
- 50. Fitter Device Options
- 51. Operating Settings and Conditions
- 52. Fitter Messages
- 53. Fitter Suppressed Messages
- 54. Assembler Summary
- 55. Assembler Settings
- 56. Assembler Generated Files
- 57. Assembler Device Options: E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/output_files/mux_4x1.sof
- 58. Assembler Messages
- 59. Legal Notice
- 60. Timing Analyzer Summary
- 61. Parallel Compilation
- 62. Clocks
- 63. Slow 1200mV 85C Model Fmax Summary
- 64. Timing Closure Recommendations
- 65. Slow 1200mV 85C Model Setup Summary
- 66. Slow 1200mV 85C Model Hold Summary
- 67. Slow 1200mV 85C Model Recovery Summary
- 68. Slow 1200mV 85C Model Removal Summary
- 69. Slow 1200mV 85C Model Minimum Pulse Width Summary
- 70. Slow 1200mV 85C Model Metastability Summary
- 71. Slow 1200mV 0C Model Fmax Summary
- 72. Slow 1200mV 0C Model Setup Summary
- 73. Slow 1200mV 0C Model Hold Summary
- 74. Slow 1200mV 0C Model Recovery Summary
- 75. Slow 1200mV 0C Model Removal Summary
- 76. Slow 1200mV 0C Model Minimum Pulse Width Summary
- 77. Slow 1200mV 0C Model Metastability Summary
- 78. Fast 1200mV 0C Model Setup Summary
- 79. Fast 1200mV 0C Model Hold Summary
- 80. Fast 1200mV 0C Model Recovery Summary
- 81. Fast 1200mV 0C Model Removal Summary
- 82. Fast 1200mV 0C Model Minimum Pulse Width Summary
- 83. Fast 1200mV 0C Model Metastability Summary
- 84. Multicorner Timing Analysis Summary
- 85. Board Trace Model Assignments
- 86. Input Transition Times
- 87. Signal Integrity Metrics (Slow 1200mv 0c Model)
- 88. Signal Integrity Metrics (Slow 1200mv 85c Model)
- 89. Signal Integrity Metrics (Fast 1200mv 0c Model)
- 90. Clock Transfers
- 91. Report TCCS
- 92. Report RSKM
- 93. Unconstrained Paths Summary
- 94. Unconstrained Input Ports
- 95. Unconstrained Output Ports
- 96. Unconstrained Input Ports
- 97. Unconstrained Output Ports
- 98. Timing Analyzer Messages
- 99. Simulation Settings
-100. Simulation Generated Files
-101. Simulation Settings
-102. Simulation Generated Files
-103. Simulation Settings
-104. Simulation Generated Files
-105. Simulation Settings
-106. Simulation Generated Files
-107. EDA Netlist Writer Messages
-108. Flow Messages
-109. Flow Suppressed Messages
+  6. EDA Netlist Writer Summary
+  7. Legal Notice
+  8. Flow Summary
+  9. Flow Settings
+ 10. Flow Non-Default Global Settings
+ 11. Flow Elapsed Time
+ 12. Flow OS Summary
+ 13. Flow Log
+ 14. Analysis & Synthesis Summary
+ 15. Analysis & Synthesis Settings
+ 16. Parallel Compilation
+ 17. Analysis & Synthesis Source Files Read
+ 18. Analysis & Synthesis Resource Usage Summary
+ 19. Analysis & Synthesis Resource Utilization by Entity
+ 20. General Register Statistics
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Fitter Summary
+ 25. Fitter Settings
+ 26. Parallel Compilation
+ 27. Ignored Assignments
+ 28. Incremental Compilation Preservation Summary
+ 29. Incremental Compilation Partition Settings
+ 30. Incremental Compilation Placement Preservation
+ 31. Pin-Out File
+ 32. Fitter Resource Usage Summary
+ 33. Fitter Partition Statistics
+ 34. Input Pins
+ 35. Output Pins
+ 36. Dual Purpose and Dedicated Pins
+ 37. I/O Bank Usage
+ 38. All Package Pins
+ 39. I/O Assignment Warnings
+ 40. Fitter Resource Utilization by Entity
+ 41. Delay Chain Summary
+ 42. Pad To Core Delay Chain Fanout
+ 43. Routing Usage Summary
+ 44. LAB Logic Elements
+ 45. LAB Signals Sourced
+ 46. LAB Signals Sourced Out
+ 47. LAB Distinct Inputs
+ 48. I/O Rules Summary
+ 49. I/O Rules Details
+ 50. I/O Rules Matrix
+ 51. Fitter Device Options
+ 52. Operating Settings and Conditions
+ 53. Fitter Messages
+ 54. Fitter Suppressed Messages
+ 55. Assembler Summary
+ 56. Assembler Settings
+ 57. Assembler Generated Files
+ 58. Assembler Device Options: E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/output_files/mux_4x1.sof
+ 59. Assembler Messages
+ 60. Legal Notice
+ 61. Timing Analyzer Summary
+ 62. Parallel Compilation
+ 63. Clocks
+ 64. Slow 1200mV 85C Model Fmax Summary
+ 65. Timing Closure Recommendations
+ 66. Slow 1200mV 85C Model Setup Summary
+ 67. Slow 1200mV 85C Model Hold Summary
+ 68. Slow 1200mV 85C Model Recovery Summary
+ 69. Slow 1200mV 85C Model Removal Summary
+ 70. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 71. Slow 1200mV 85C Model Metastability Summary
+ 72. Slow 1200mV 0C Model Fmax Summary
+ 73. Slow 1200mV 0C Model Setup Summary
+ 74. Slow 1200mV 0C Model Hold Summary
+ 75. Slow 1200mV 0C Model Recovery Summary
+ 76. Slow 1200mV 0C Model Removal Summary
+ 77. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 78. Slow 1200mV 0C Model Metastability Summary
+ 79. Fast 1200mV 0C Model Setup Summary
+ 80. Fast 1200mV 0C Model Hold Summary
+ 81. Fast 1200mV 0C Model Recovery Summary
+ 82. Fast 1200mV 0C Model Removal Summary
+ 83. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 84. Fast 1200mV 0C Model Metastability Summary
+ 85. Multicorner Timing Analysis Summary
+ 86. Board Trace Model Assignments
+ 87. Input Transition Times
+ 88. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 89. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 90. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 91. Clock Transfers
+ 92. Report TCCS
+ 93. Report RSKM
+ 94. Unconstrained Paths Summary
+ 95. Unconstrained Input Ports
+ 96. Unconstrained Output Ports
+ 97. Unconstrained Input Ports
+ 98. Unconstrained Output Ports
+ 99. Timing Analyzer Messages
+100. Simulation Settings
+101. Simulation Generated Files
+102. Simulation Settings
+103. Simulation Generated Files
+104. Simulation Settings
+105. Simulation Generated Files
+106. Simulation Settings
+107. Simulation Generated Files
+108. Simulation Settings
+109. Simulation Generated Files
+110. EDA Netlist Writer Messages
+111. Flow Messages
+112. Flow Suppressed Messages
 
 
 
@@ -140,12 +143,25 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Apr 04 19:35:16 2020 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 07 09:16:05 2020 ;
 ; Revision Name             ; mux_4x1                               ;
 ; Top-level Entity Name     ; mux_4x1                               ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                              ;
++---------------------------+---------------------------------------------+
+; EDA Netlist Writer Status ; Successful - Sat Apr 04 19:35:16 2020       ;
+; Revision Name             ; mux_4x1                                     ;
+; Top-level Entity Name     ; mux_4x1                                     ;
+; Family                    ; Cyclone IV E                                ;
+; Simulation Files Creation ; Successful                                  ;
+; Flow Status               ; Successful - Tue Apr 07 09:16:05 2020       ;
+; Quartus Prime Version     ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
++---------------------------+---------------------------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -272,7 +288,9 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4629 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4644 MB             ; 00:00:00                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:25                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4629 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4644 MB             ; 00:00:00                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:00:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -293,6 +311,8 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-02RTBVI  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -303,6 +323,8 @@ quartus_map --read_settings_files=on --write_settings_files=off mux_4x1 -c mux_4
 quartus_fit --read_settings_files=off --write_settings_files=off mux_4x1 -c mux_4x1
 quartus_asm --read_settings_files=off --write_settings_files=off mux_4x1 -c mux_4x1
 quartus_sta mux_4x1 -c mux_4x1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_4x1 -c mux_4x1 --vector_source=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf --testbench_file=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ mux_4x1 -c mux_4x1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_4x1 -c mux_4x1 --vector_source=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf --testbench_file=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ mux_4x1 -c mux_4x1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_4x1 -c mux_4x1 --vector_source=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/Waveform.vwf --testbench_file=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/Waveform.vwf.vht
@@ -2084,6 +2106,36 @@ Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
 +-----------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate functional simulation netlist                                                            ; On                     ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; On                     ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; On                     ;
++---------------------------------------------------------------------------------------------------+------------------------+
+
+
++-----------------------------------------------------------------------+
+; Simulation Generated Files                                            ;
++-----------------------------------------------------------------------+
+; Generated Files                                                       ;
++-----------------------------------------------------------------------+
+; E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim//mux_4x1.vho ;
++-----------------------------------------------------------------------+
+
+
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
@@ -2103,45 +2155,45 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Apr 04 19:35:13 2020
+    Info: Processing started: Tue Apr 07 09:16:01 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ mux_4x1 -c mux_4x1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 04 19:35:14 2020
+    Info: Processing started: Tue Apr 07 09:16:02 2020
 Info: Command: quartus_eda -t e:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/qnativesim.tcl mux_4x1 mux_4x1 --gen_script --called_from_qeda --qsf_sim_tool "ModelSim-Altera (VHDL)" --rtl_sim --qsf_is_functional ON --qsf_netlist_output_directory E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ --qsf_user_compiled_directory <None>
 Info: Quartus(args): mux_4x1 mux_4x1 --gen_script --called_from_qeda --qsf_sim_tool {ModelSim-Altera (VHDL)} --rtl_sim --qsf_is_functional ON --qsf_netlist_output_directory E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ --qsf_user_compiled_directory <None>
 Info: Info: Quartus Prime has detected VHDL design -- VHDL simulation models will be used
-Warning: Warning: File mux_4x1_run_msim_rtl_vhdl.do already exists - backing up current file as mux_4x1_run_msim_rtl_vhdl.do.bak2
+Warning: Warning: File mux_4x1_run_msim_rtl_vhdl.do already exists - backing up current file as mux_4x1_run_msim_rtl_vhdl.do.bak3
 Info: Info: Generated ModelSim-Altera script file E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/mux_4x1_run_msim_rtl_vhdl.do File: E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/mux_4x1_run_msim_rtl_vhdl.do Line: 0
 Info: Info: tool command file generation was successful
 Info (23030): Evaluation of Tcl script e:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/qnativesim.tcl was successful
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4589 megabytes
-    Info: Processing ended: Sat Apr 04 19:35:14 2020
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Tue Apr 07 09:16:04 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:00
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 04 19:35:15 2020
+    Info: Processing started: Tue Apr 07 09:16:05 2020
 Info: Command: quartus_eda -t e:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/qnativesim.tcl mux_4x1 mux_4x1 --gen_script --called_from_qeda --qsf_sim_tool "ModelSim-Altera (VHDL)" --qsf_is_functional ON --qsf_netlist_output_directory E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ --qsf_user_compiled_directory <None>
 Info: Quartus(args): mux_4x1 mux_4x1 --gen_script --called_from_qeda --qsf_sim_tool {ModelSim-Altera (VHDL)} --qsf_is_functional ON --qsf_netlist_output_directory E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/ --qsf_user_compiled_directory <None>
-Warning: Warning: File mux_4x1_run_msim_gate_vhdl.do already exists - backing up current file as mux_4x1_run_msim_gate_vhdl.do.bak2
+Warning: Warning: File mux_4x1_run_msim_gate_vhdl.do already exists - backing up current file as mux_4x1_run_msim_gate_vhdl.do.bak3
 Info: Info: Generated ModelSim-Altera script file E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/mux_4x1_run_msim_gate_vhdl.do File: E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim/mux_4x1_run_msim_gate_vhdl.do Line: 0
 Info: Info: tool command file generation was successful
 Info (23030): Evaluation of Tcl script e:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/qnativesim.tcl was successful
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4586 megabytes
-    Info: Processing ended: Sat Apr 04 19:35:15 2020
+    Info: Processing ended: Tue Apr 07 09:16:05 2020
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 Info (204019): Generated file mux_4x1.vho in folder "E:/Practicas-VLSI/Proyectos/lab5/mux_4x1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Sat Apr 04 19:35:16 2020
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Tue Apr 07 09:16:05 2020
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:00
 
 

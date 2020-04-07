@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/04/2020 19:35:13"
+-- Generated on "04/07/2020 09:16:00"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          mux_4x1
 -- 
@@ -52,59 +52,69 @@ BEGIN
 	VERDE => VERDE
 	);
 
--- DIP_SW[8]
-t_prcs_DIP_SW_8: PROCESS
+-- DIP_SW[5]
+t_prcs_DIP_SW_5: PROCESS
 BEGIN
-	DIP_SW(8) <= '0';
-	WAIT FOR 3000 ps;
-	DIP_SW(8) <= '1';
-	WAIT FOR 1000 ps;
-	DIP_SW(8) <= '0';
-WAIT;
-END PROCESS t_prcs_DIP_SW_8;
-
--- DIP_SW[7]
-t_prcs_DIP_SW_7: PROCESS
-BEGIN
-	DIP_SW(7) <= '0';
-	WAIT FOR 6000 ps;
-	DIP_SW(7) <= '1';
-	WAIT FOR 1000 ps;
-	DIP_SW(7) <= '0';
-WAIT;
-END PROCESS t_prcs_DIP_SW_7;
+LOOP
+	DIP_SW(5) <= '0';
+	WAIT FOR 50 ps;
+	DIP_SW(5) <= '1';
+	WAIT FOR 50 ps;
+	IF (NOW >= 20000 ps) THEN WAIT; END IF;
+END LOOP;
+END PROCESS t_prcs_DIP_SW_5;
 
 -- DIP_SW[6]
 t_prcs_DIP_SW_6: PROCESS
 BEGIN
+LOOP
 	DIP_SW(6) <= '0';
-	WAIT FOR 1000 ps;
+	WAIT FOR 100 ps;
 	DIP_SW(6) <= '1';
-	WAIT FOR 1000 ps;
-	DIP_SW(6) <= '0';
-WAIT;
+	WAIT FOR 100 ps;
+	IF (NOW >= 20000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_DIP_SW_6;
 
--- DIP_SW[5]
-t_prcs_DIP_SW_5: PROCESS
+-- DIP_SW[7]
+t_prcs_DIP_SW_7: PROCESS
 BEGIN
-	DIP_SW(5) <= '0';
-	WAIT FOR 4000 ps;
-	DIP_SW(5) <= '1';
-	WAIT FOR 1000 ps;
-	DIP_SW(5) <= '0';
+	FOR i IN 1 TO 66
+	LOOP
+		DIP_SW(7) <= '0';
+		WAIT FOR 150 ps;
+		DIP_SW(7) <= '1';
+		WAIT FOR 150 ps;
+	END LOOP;
+	DIP_SW(7) <= '0';
+	WAIT FOR 150 ps;
+	DIP_SW(7) <= '1';
 WAIT;
-END PROCESS t_prcs_DIP_SW_5;
+END PROCESS t_prcs_DIP_SW_7;
+
+-- DIP_SW[8]
+t_prcs_DIP_SW_8: PROCESS
+BEGIN
+LOOP
+	DIP_SW(8) <= '0';
+	WAIT FOR 250 ps;
+	DIP_SW(8) <= '1';
+	WAIT FOR 250 ps;
+	IF (NOW >= 20000 ps) THEN WAIT; END IF;
+END LOOP;
+END PROCESS t_prcs_DIP_SW_8;
 -- KEY_EX[1]
 t_prcs_KEY_EX_1: PROCESS
 BEGIN
-LOOP
+	FOR i IN 1 TO 2
+	LOOP
+		KEY_EX(1) <= '0';
+		WAIT FOR 4000 ps;
+		KEY_EX(1) <= '1';
+		WAIT FOR 4000 ps;
+	END LOOP;
 	KEY_EX(1) <= '0';
-	WAIT FOR 1000 ps;
-	KEY_EX(1) <= '1';
-	WAIT FOR 1000 ps;
-	IF (NOW >= 20000 ps) THEN WAIT; END IF;
-END LOOP;
+WAIT;
 END PROCESS t_prcs_KEY_EX_1;
 -- KEY_EX[0]
 t_prcs_KEY_EX_0: PROCESS
