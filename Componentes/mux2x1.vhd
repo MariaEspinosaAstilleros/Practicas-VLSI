@@ -9,15 +9,15 @@ USE ieee.std_logic_1164.all;
 
 ENTITY mux2x1 IS 
     PORT(
-        A: IN STD_LOGIC; 
-        B: IN STD_LOGIC;
-        S: IN STD_LOGIC;
-        O: OUT STD_LOGIC);            
+        A: IN STD_LOGIC;    -- 1º entrada del mux
+        B: IN STD_LOGIC;    -- 2º entrada del mux
+        S: IN STD_LOGIC;    -- entrada de selección
+        O: OUT STD_LOGIC);  -- salida del mux            
 END mux2x1; 
 
 ARCHITECTURE MuxFunc OF mux2x1 IS 
 BEGIN 
-    WITH S SELECT
-        O <= A WHEN '0', -- esto no creo que se escriba asi pero no se ponerlo de otra forma :( 
-             B WHEN OTHERS; 
+    WITH S SELECT           
+        O <= A WHEN '0',    -- si la entrada de selección es 0 la salida será A
+             B WHEN OTHERS; -- si la entrada de selección es 1 la salida será B
 END MuxFunc; 

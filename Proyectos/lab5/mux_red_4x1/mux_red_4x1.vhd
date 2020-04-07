@@ -10,9 +10,9 @@ USE ieee.std_logic_signed.all;
 
 ENTITY mux_red_4x1 IS 
     PORT ( 
-        DIP_SW : IN STD_LOGIC_VECTOR(5 TO 8); --dip switches
-        KEY_EX : IN STD_LOGIC_VECTOR(0 TO 1); --pulsadores
-        VERDE :  OUT STD_LOGIC);  
+        DIP_SW : IN STD_LOGIC_VECTOR(5 TO 8);   -- dip switches
+        KEY_EX : IN STD_LOGIC_VECTOR(0 TO 1);   -- pulsadores
+        VERDE :  OUT STD_LOGIC);                -- led verde  
 END mux_red_4x1; 
 
 ARCHITECTURE funcLab5 OF mux_red_4x1 IS 
@@ -22,12 +22,13 @@ COMPONENT mux2x1
         A: IN STD_LOGIC; 
         B: IN STD_LOGIC;
         S: IN STD_LOGIC;
-        O: OUT STD_LOGIC);              -- led verde
+        O: OUT STD_LOGIC);              
 END COMPONENT; 
 
 -- Realizamos la red de 3 mux 2x1 
+-- Asingamos a cada elemento del componente las entradas y las salidas correspondientes
 BEGIN 
-    mux1: mux2x1 PORT MAP (
+    mux1: mux2x1 PORT MAP ( 
         A => DIP_SW(5), B => DIP_SW(6) , S => KEY_EX(0), O => m0
         ); 
     mux2: mux2x1 PORT MAP (
