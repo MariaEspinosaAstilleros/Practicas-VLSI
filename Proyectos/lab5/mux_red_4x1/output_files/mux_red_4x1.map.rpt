@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mux_red_4x1
-Sat Apr 04 20:27:39 2020
+Tue Apr 07 12:31:56 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Apr 04 20:27:39 2020           ;
+; Analysis & Synthesis Status        ; Failed - Tue Apr 07 12:31:56 2020           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; mux_red_4x1                                 ;
 ; Top-level Entity Name              ; mux_red_4x1                                 ;
@@ -161,18 +161,18 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 04 20:27:31 2020
+    Info: Processing started: Tue Apr 07 12:31:41 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mux_red_4x1 -c mux_red_4x1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /practicas-vlsi/componentes/mux_2x1.vhd
     Info (12022): Found design unit 1: mux_2x1-MuxFunc File: E:/Practicas-VLSI/Componentes/mux_2x1.vhd Line: 17
     Info (12023): Found entity 1: mux_2x1 File: E:/Practicas-VLSI/Componentes/mux_2x1.vhd Line: 10
-Error (12007): Top-level design entity "mux_red_4x1" is undefined
+Error (10316): VHDL error at mux_2x1.vhd(21): character ''0'' used but not declared for type "std_logic_vector" File: E:/Practicas-VLSI/Componentes/mux_2x1.vhd Line: 21
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4786 megabytes
-    Error: Processing ended: Sat Apr 04 20:27:39 2020
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:18
+    Error: Peak virtual memory: 4783 megabytes
+    Error: Processing ended: Tue Apr 07 12:31:56 2020
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:19
 
 
