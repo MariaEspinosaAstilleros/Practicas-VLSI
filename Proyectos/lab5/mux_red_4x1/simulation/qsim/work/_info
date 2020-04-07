@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Practicas-VLSI/Proyectos/lab5/mux_red_4x1/simulation/qsim
+Ehard_block
+Z1 w1586271279
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
+R0
+Z8 8mux_red_4x1.vho
+Z9 Fmux_red_4x1.vho
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1586271282
+!i10b 1
+Z12 !s108 1586271282.000000
+Z13 !s90 -work|work|mux_red_4x1.vho|
+Z14 !s107 mux_red_4x1.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emux_red_4x1
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L77
+Vi]G4IRIbU1lUF8[R8Dm^c2
+!s100 JOB7Kf]S>S]Sbde[U@0Hz1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 11 mux_red_4x1 0 22 i]G4IRIbU1lUF8[R8Dm^c2
+l125
+L95
+V5NG0A?o[TZXJ137<17=TE2
+!s100 bc?B2^4eg<@Y29A944JB91
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emux_red_4x1_vhd_vec_tst
+Z17 w1586271277
+R5
+R6
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+VQ5a^51bLh]hkkT@:@4:Wc1
+!s100 ?Wa@`UBJIRhSWQof8SiN91
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform.vwf.vht|
+Z21 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Amux_red_4x1_arch
+R5
+R6
+DEx4 work 23 mux_red_4x1_vhd_vec_tst 0 22 Q5a^51bLh]hkkT@:@4:Wc1
+l46
+L33
+V<gKQQ2eeW2>BBQ?9QZE`40
+!s100 7l`GkI^HhI28Y1>V:B`7^1
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
