@@ -1,0 +1,66 @@
+|lab6
+DIP_SW[8] => dec_hex_seg7:dec.hex[8]
+DIP_SW[7] => dec_hex_seg7:dec.hex[7]
+DIP_SW[6] => dec_hex_seg7:dec.hex[6]
+DIP_SW[5] => dec_hex_seg7:dec.hex[5]
+KEY_EX => dec_hex_seg7:dec.enable
+DP <= dec_hex_seg7:dec.DP
+DISP[7] <= dec_hex_seg7:dec.display[7]
+DISP[6] <= dec_hex_seg7:dec.display[6]
+DISP[5] <= dec_hex_seg7:dec.display[5]
+DISP[4] <= dec_hex_seg7:dec.display[4]
+DISP[3] <= dec_hex_seg7:dec.display[3]
+DISP[2] <= dec_hex_seg7:dec.display[2]
+DISP[1] <= dec_hex_seg7:dec.display[1]
+
+
+|lab6|dec_hex_seg7:dec
+hex[8] => Mux0.IN19
+hex[8] => Mux1.IN19
+hex[8] => Mux2.IN19
+hex[8] => Mux3.IN19
+hex[8] => Mux4.IN19
+hex[8] => Mux5.IN19
+hex[8] => Mux6.IN19
+hex[8] => LessThan0.IN8
+hex[7] => Mux0.IN18
+hex[7] => Mux1.IN18
+hex[7] => Mux2.IN18
+hex[7] => Mux3.IN18
+hex[7] => Mux4.IN18
+hex[7] => Mux5.IN18
+hex[7] => Mux6.IN18
+hex[7] => LessThan0.IN7
+hex[6] => Mux0.IN17
+hex[6] => Mux1.IN17
+hex[6] => Mux2.IN17
+hex[6] => Mux3.IN17
+hex[6] => Mux4.IN17
+hex[6] => Mux5.IN17
+hex[6] => Mux6.IN17
+hex[6] => LessThan0.IN6
+hex[5] => Mux0.IN16
+hex[5] => Mux1.IN16
+hex[5] => Mux2.IN16
+hex[5] => Mux3.IN16
+hex[5] => Mux4.IN16
+hex[5] => Mux5.IN16
+hex[5] => Mux6.IN16
+hex[5] => LessThan0.IN5
+enable => display.OUTPUTSELECT
+enable => display.OUTPUTSELECT
+enable => display.OUTPUTSELECT
+enable => display.OUTPUTSELECT
+enable => display.OUTPUTSELECT
+enable => display.OUTPUTSELECT
+enable => display.OUTPUTSELECT
+DP <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+display[7] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display.DB_MAX_OUTPUT_PORT_TYPE
+
+

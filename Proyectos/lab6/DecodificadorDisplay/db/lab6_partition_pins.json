@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DP",
+					"strict" : false
+				},
+				{
+					"name" : "DISP[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DISP[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DISP[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DISP[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DISP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DISP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DISP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP_SW[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP_SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP_SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP_SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY_EX",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
