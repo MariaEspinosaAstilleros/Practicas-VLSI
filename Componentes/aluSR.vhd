@@ -7,7 +7,7 @@ ENTITY aluSR IS
           Y : IN STD_LOGIC_VECTOR(0 to 3);
           Cin : IN STD_LOGIC; 
           Cout : OUT STD_LOGIC;
-			 Overflow : OUT STD_LOGIC; 
+		  Overflow : OUT STD_LOGIC; 
           Sig : OUT STD_LOGIC; 
           R : OUT STD_LOGIC_VECTOR(3 downto 0));
 END aluSR;
@@ -16,10 +16,9 @@ END aluSR;
 ARCHITECTURE AluFunc OF aluSR IS 
 SIGNAL Result : STD_LOGIC_VECTOR(4 DOWNTO 0) ;
 BEGIN
-    Result <= (('0' & X) + ('0' & Y)) WHEN Cin = '0' ELSE (('0' & X) + NOT('0' & Y) + Cin); 
-	 --Result <= (('0' & X) + ('0' & Y)) WHEN Cin = '0' ELSE (('0' & X) - ('0' & Y)); 
+    Result <= (('0' & X) + ('0' & Y)) WHEN Cin = '0' ELSE (('0' & X) + NOT('0' & Y) + Cin);  
     Sig <= '1' WHEN (Cin = '1' AND (('0' & X) < ('0' & Y))) ELSE '0';
-	 R <= Result(3 downto 0); 
-	 Cout <= Result(4); 
-	 Overflow <= Result(4) XOR X(0) XOR Y(0); 
+	R <= Result(3 downto 0); 
+	Cout <= Result(4); 
+	Overflow <= Result(4) XOR X(0) XOR Y(0); 
 END AluFunc; 

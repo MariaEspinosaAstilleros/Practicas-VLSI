@@ -16,7 +16,7 @@ COMPONENT aluSR
         Y : IN STD_LOGIC_VECTOR(0 to 3);
         Cin : IN STD_LOGIC; 
         Cout : OUT STD_LOGIC;
-		  Overflow : OUT STD_LOGIC;
+	Overflow : OUT STD_LOGIC;
         Sig: OUT STD_LOGIC; 
         R : OUT STD_LOGIC_VECTOR(3 downto 0));
 END COMPONENT; 

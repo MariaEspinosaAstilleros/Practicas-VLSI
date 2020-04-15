@@ -1,6 +1,6 @@
-// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and any partner logic 
+// and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
@@ -10,14 +10,13 @@
 // agreement, including, without limitation, that your use is for
 // the sole purpose of programming logic devices manufactured by
 // Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details, at
-// https://fpgasoftware.intel.com/eula.
+// refer to the applicable agreement for further details.
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "03/15/2020 20:02:38"
+// DATE "04/15/2020 10:44:37"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -69,6 +68,10 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("lab4_v.sdo");
+// synopsys translate_on
+
 wire \KEY_EX[1]~input_o ;
 wire \LED[0]~output_o ;
 wire \LED[1]~output_o ;
