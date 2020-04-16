@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab6
-Thu Apr 16 17:22:43 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Thu Apr 16 17:27:50 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -23,9 +23,9 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -35,16 +35,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 16 17:22:43 2020       ;
-; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 16 17:27:50 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab6                                        ;
 ; Top-level Entity Name              ; lab6                                        ;
 ; Family                             ; Cyclone IV E                                ;
@@ -151,8 +150,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,14 +161,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+---------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                       ; Library ;
-+---------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
-; ../../../Componentes/dec_hex_seg7.vhd ; yes             ; User VHDL File  ; /home/david/Escritorio/Practicas-VLSI/Componentes/dec_hex_seg7.vhd                 ;         ;
-; lab6.vhd                              ; yes             ; User VHDL File  ; /home/david/Escritorio/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd ;         ;
-+---------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++---------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
++---------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
+; ../../../Componentes/dec_hex_seg7.vhd ; yes             ; User VHDL File  ; E:/Practicas-VLSI/Componentes/dec_hex_seg7.vhd                 ;         ;
+; lab6.vhd                              ; yes             ; User VHDL File  ; E:/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd ;         ;
++---------------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------+
@@ -261,20 +260,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Apr 16 17:22:33 2020
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Apr 16 17:27:40 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DecodificadorDisplay -c lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/david/Escritorio/Practicas-VLSI/Componentes/dec_hex_seg7.vhd
-    Info (12022): Found design unit 1: dec_hex_seg7-DecFunc File: /home/david/Escritorio/Practicas-VLSI/Componentes/dec_hex_seg7.vhd Line: 14
-    Info (12023): Found entity 1: dec_hex_seg7 File: /home/david/Escritorio/Practicas-VLSI/Componentes/dec_hex_seg7.vhd Line: 5
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /practicas-vlsi/componentes/dec_hex_seg7.vhd
+    Info (12022): Found design unit 1: dec_hex_seg7-DecFunc File: E:/Practicas-VLSI/Componentes/dec_hex_seg7.vhd Line: 14
+    Info (12023): Found entity 1: dec_hex_seg7 File: E:/Practicas-VLSI/Componentes/dec_hex_seg7.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file lab6.vhd
-    Info (12022): Found design unit 1: lab6-funcLab6 File: /home/david/Escritorio/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd Line: 14
-    Info (12023): Found entity 1: lab6 File: /home/david/Escritorio/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd Line: 5
+    Info (12022): Found design unit 1: lab6-funcLab6 File: E:/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd Line: 14
+    Info (12023): Found entity 1: lab6 File: E:/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd Line: 5
 Info (12127): Elaborating entity "lab6" for the top level hierarchy
-Info (12128): Elaborating entity "dec_hex_seg7" for hierarchy "dec_hex_seg7:dec" File: /home/david/Escritorio/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd Line: 23
-Warning (10492): VHDL Process Statement warning at dec_hex_seg7.vhd(18): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/david/Escritorio/Practicas-VLSI/Componentes/dec_hex_seg7.vhd Line: 18
+Info (12128): Elaborating entity "dec_hex_seg7" for hierarchy "dec_hex_seg7:dec" File: E:/Practicas-VLSI/Proyectos/lab6/DecodificadorDisplay/lab6.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at dec_hex_seg7.vhd(18): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Practicas-VLSI/Componentes/dec_hex_seg7.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -283,9 +282,9 @@ Info (21057): Implemented 28 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 15 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 924 megabytes
-    Info: Processing ended: Thu Apr 16 17:22:43 2020
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Thu Apr 16 17:27:50 2020
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:20
 
 
