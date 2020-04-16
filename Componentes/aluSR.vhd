@@ -1,6 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_signed.all;
+USE ieee.std_logic_unsigned.all;
 
 ENTITY aluSR IS 
     PORT (X : IN STD_LOGIC_VECTOR(0 to 3);

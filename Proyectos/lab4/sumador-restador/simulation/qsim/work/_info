@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dE:/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim
 Ehard_block
-Z1 w1586945383
+Z1 w1587048524
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ VOgIg9T_BR7joedFDVM>H13
 !s100 A`ID_i56<Ua56=ZD=[EG=2
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1586945384
+Z11 !s110 1587048526
 !i10b 1
-Z12 !s108 1586945384.000000
+Z12 !s108 1587048526.000000
 Z13 !s90 -work|work|lab4.vho|
 Z14 !s107 lab4.vho|
 !i113 1
@@ -103,7 +103,7 @@ R14
 R15
 R16
 Elab4_vhd_vec_tst
-Z17 w1586945382
+Z17 w1587048523
 R5
 R6
 R0
@@ -129,8 +129,8 @@ R6
 Z22 DEx4 work 16 lab4_vhd_vec_tst 0 22 LTOdSNlCXnV5?bG=8?1hK2
 l46
 L33
-Vn^L6hG8?27K85N1gnEoFE2
-!s100 bJBMSJW0mYiEY3H^OPogh3
+Z23 Vn^L6hG8?27K85N1gnEoFE2
+Z24 !s100 bJBMSJW0mYiEY3H^OPogh3
 R10
 32
 R11
