@@ -4,14 +4,14 @@ DIP_SW[7] => dec_hex_seg7:dec.hex[7]
 DIP_SW[6] => dec_hex_seg7:dec.hex[6]
 DIP_SW[5] => dec_hex_seg7:dec.hex[5]
 KEY_EX => dec_hex_seg7:dec.enable
-DP <= dec_hex_seg7:dec.DP
-DISP[7] <= dec_hex_seg7:dec.display[7]
-DISP[6] <= dec_hex_seg7:dec.display[6]
-DISP[5] <= dec_hex_seg7:dec.display[5]
-DISP[4] <= dec_hex_seg7:dec.display[4]
-DISP[3] <= dec_hex_seg7:dec.display[3]
-DISP[2] <= dec_hex_seg7:dec.display[2]
-DISP[1] <= dec_hex_seg7:dec.display[1]
+DP << dec_hex_seg7:dec.DP
+DISP[7] << dec_hex_seg7:dec.display[7]
+DISP[6] << dec_hex_seg7:dec.display[6]
+DISP[5] << dec_hex_seg7:dec.display[5]
+DISP[4] << dec_hex_seg7:dec.display[4]
+DISP[3] << dec_hex_seg7:dec.display[3]
+DISP[2] << dec_hex_seg7:dec.display[2]
+DISP[1] << dec_hex_seg7:dec.display[1]
 
 
 |lab6|dec_hex_seg7:dec
