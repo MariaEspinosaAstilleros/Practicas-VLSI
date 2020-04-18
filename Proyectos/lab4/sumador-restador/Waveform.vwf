@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SumadorRestador -c lab4 --vector_source="E:/Practicas-VLSI/Proyectos/lab4/sumador-restador/Waveform.vwf" --testbench_file="E:/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SumadorRestador -c lab4 --vector_source="E:/Practicas-VLSI/Proyectos/lab4/sumador-restador/Waveform.vwf" --testbench_file="E:/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/" SumadorRestador -c lab4</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="E:/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/" SumadorRestador -c lab4</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SumadorRestador -c lab4 --vector_source="C:/Users/David/Desktop/Practicas-VLSI/Proyectos/lab4/sumador-restador/Waveform.vwf" --testbench_file="C:/Users/David/Desktop/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SumadorRestador -c lab4 --vector_source="C:/Users/David/Desktop/Practicas-VLSI/Proyectos/lab4/sumador-restador/Waveform.vwf" --testbench_file="C:/Users/David/Desktop/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/David/Desktop/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/" SumadorRestador -c lab4</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/David/Desktop/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim/" SumadorRestador -c lab4</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work lab4.vho
@@ -20,6 +20,8 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +40,8 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -68,91 +72,11 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 15.0;
+	DATA_DURATION = 480.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
-	GRID_PERIOD = 1.0;
+	GRID_PERIOD = 20.0;
 	GRID_DUTY_CYCLE = 50;
-}
-
-SIGNAL("LED[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("LED[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("LED[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("LED[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("LED[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("LED[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("LED[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("KEY_EX[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
 }
 
 SIGNAL("DIP_SW[8]")
@@ -235,11 +159,6 @@ SIGNAL("DIP_SW[1]")
 	PARENT = "";
 }
 
-GROUP("Result")
-{
-	MEMBERS = "LED[3]", "LED[2]", "LED[1]", "LED[0]";
-}
-
 GROUP("X")
 {
 	MEMBERS = "DIP_SW[1]", "DIP_SW[2]", "DIP_SW[3]", "DIP_SW[4]";
@@ -250,12 +169,191 @@ GROUP("Y")
 	MEMBERS = "DIP_SW[5]", "DIP_SW[6]", "DIP_SW[7]", "DIP_SW[8]";
 }
 
+SIGNAL("LED[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("LED[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("LED[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("LED[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("LED[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("LED[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("KEY_EX[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+GROUP("Result")
+{
+	MEMBERS = "LED[0]", "LED[1]", "LED[2]", "LED[3]";
+}
+
+TRANSITION_LIST("DIP_SW[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 440.0;
+		LEVEL 1 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("DIP_SW[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 440.0;
+		LEVEL 0 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("DIP_SW[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("DIP_SW[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("DIP_SW[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 80.0;
+	}
+}
+
+TRANSITION_LIST("DIP_SW[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 80.0;
+	}
+}
+
+TRANSITION_LIST("DIP_SW[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 240.0;
+		LEVEL 0 FOR 240.0;
+	}
+}
+
+TRANSITION_LIST("DIP_SW[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 240.0;
+		LEVEL 1 FOR 240.0;
+	}
+}
+
 TRANSITION_LIST("LED[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 15.0;
+		LEVEL X FOR 480.0;
 	}
 }
 
@@ -264,7 +362,7 @@ TRANSITION_LIST("LED[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 15.0;
+		LEVEL X FOR 480.0;
 	}
 }
 
@@ -273,7 +371,7 @@ TRANSITION_LIST("LED[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 15.0;
+		LEVEL X FOR 480.0;
 	}
 }
 
@@ -282,16 +380,7 @@ TRANSITION_LIST("LED[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 15.0;
-	}
-}
-
-TRANSITION_LIST("LED[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 15.0;
+		LEVEL X FOR 480.0;
 	}
 }
 
@@ -300,7 +389,7 @@ TRANSITION_LIST("LED[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 15.0;
+		LEVEL X FOR 480.0;
 	}
 }
 
@@ -309,7 +398,7 @@ TRANSITION_LIST("LED[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 15.0;
+		LEVEL X FOR 480.0;
 	}
 }
 
@@ -320,100 +409,10 @@ TRANSITION_LIST("KEY_EX[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 30;
-			LEVEL 0 FOR 0.25;
-			LEVEL 1 FOR 0.25;
+			REPEAT = 12;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
 		}
-	}
-}
-
-TRANSITION_LIST("DIP_SW[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 15.0;
-	}
-}
-
-TRANSITION_LIST("DIP_SW[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 15.0;
-	}
-}
-
-TRANSITION_LIST("DIP_SW[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 15;
-			LEVEL 0 FOR 0.5;
-			LEVEL 1 FOR 0.5;
-		}
-	}
-}
-
-TRANSITION_LIST("DIP_SW[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 15;
-			LEVEL 0 FOR 0.5;
-			LEVEL 1 FOR 0.5;
-		}
-	}
-}
-
-TRANSITION_LIST("DIP_SW[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1.0;
-		LEVEL 0 FOR 1.0;
-		LEVEL 1 FOR 2.0;
-		LEVEL 0 FOR 11.0;
-	}
-}
-
-TRANSITION_LIST("DIP_SW[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 2.0;
-		LEVEL 1 FOR 1.0;
-		LEVEL 0 FOR 12.0;
-	}
-}
-
-TRANSITION_LIST("DIP_SW[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 3.0;
-		LEVEL 0 FOR 12.0;
-	}
-}
-
-TRANSITION_LIST("DIP_SW[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 3.0;
-		LEVEL 1 FOR 1.0;
-		LEVEL 0 FOR 11.0;
 	}
 }
 
@@ -592,15 +591,6 @@ DISPLAY_LINE
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
 	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "LED[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 18;
-	TREE_LEVEL = 0;
 }
 
 TIME_BAR

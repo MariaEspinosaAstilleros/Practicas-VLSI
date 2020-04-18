@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/16/2020 16:48:43"
+-- Generated on "04/18/2020 12:30:37"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          lab4
 -- 
@@ -57,10 +57,10 @@ t_prcs_KEY_EX_0: PROCESS
 BEGIN
 LOOP
 	KEY_EX(0) <= '0';
-	WAIT FOR 250 ps;
+	WAIT FOR 20000 ps;
 	KEY_EX(0) <= '1';
-	WAIT FOR 250 ps;
-	IF (NOW >= 15000 ps) THEN WAIT; END IF;
+	WAIT FOR 20000 ps;
+	IF (NOW >= 480000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_KEY_EX_0;
 
@@ -68,10 +68,8 @@ END PROCESS t_prcs_KEY_EX_0;
 t_prcs_DIP_SW_1: PROCESS
 BEGIN
 	DIP_SW(1) <= '0';
-	WAIT FOR 3000 ps;
+	WAIT FOR 240000 ps;
 	DIP_SW(1) <= '1';
-	WAIT FOR 1000 ps;
-	DIP_SW(1) <= '0';
 WAIT;
 END PROCESS t_prcs_DIP_SW_1;
 
@@ -79,7 +77,7 @@ END PROCESS t_prcs_DIP_SW_1;
 t_prcs_DIP_SW_2: PROCESS
 BEGIN
 	DIP_SW(2) <= '1';
-	WAIT FOR 3000 ps;
+	WAIT FOR 240000 ps;
 	DIP_SW(2) <= '0';
 WAIT;
 END PROCESS t_prcs_DIP_SW_2;
@@ -88,10 +86,12 @@ END PROCESS t_prcs_DIP_SW_2;
 t_prcs_DIP_SW_3: PROCESS
 BEGIN
 	DIP_SW(3) <= '0';
-	WAIT FOR 2000 ps;
+	WAIT FOR 160000 ps;
 	DIP_SW(3) <= '1';
-	WAIT FOR 1000 ps;
+	WAIT FOR 80000 ps;
 	DIP_SW(3) <= '0';
+	WAIT FOR 160000 ps;
+	DIP_SW(3) <= '1';
 WAIT;
 END PROCESS t_prcs_DIP_SW_3;
 
@@ -99,11 +99,11 @@ END PROCESS t_prcs_DIP_SW_3;
 t_prcs_DIP_SW_4: PROCESS
 BEGIN
 	DIP_SW(4) <= '1';
-	WAIT FOR 1000 ps;
+	WAIT FOR 80000 ps;
 	DIP_SW(4) <= '0';
-	WAIT FOR 1000 ps;
+	WAIT FOR 80000 ps;
 	DIP_SW(4) <= '1';
-	WAIT FOR 2000 ps;
+	WAIT FOR 240000 ps;
 	DIP_SW(4) <= '0';
 WAIT;
 END PROCESS t_prcs_DIP_SW_4;
@@ -111,31 +111,67 @@ END PROCESS t_prcs_DIP_SW_4;
 -- DIP_SW[5]
 t_prcs_DIP_SW_5: PROCESS
 BEGIN
-LOOP
 	DIP_SW(5) <= '0';
-	WAIT FOR 500 ps;
+	WAIT FOR 40000 ps;
 	DIP_SW(5) <= '1';
-	WAIT FOR 500 ps;
-	IF (NOW >= 15000 ps) THEN WAIT; END IF;
-END LOOP;
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(5) <= '1';
+WAIT;
 END PROCESS t_prcs_DIP_SW_5;
 
 -- DIP_SW[6]
 t_prcs_DIP_SW_6: PROCESS
 BEGIN
-LOOP
 	DIP_SW(6) <= '0';
-	WAIT FOR 500 ps;
+	WAIT FOR 40000 ps;
 	DIP_SW(6) <= '1';
-	WAIT FOR 500 ps;
-	IF (NOW >= 15000 ps) THEN WAIT; END IF;
-END LOOP;
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '1';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '0';
+	WAIT FOR 40000 ps;
+	DIP_SW(6) <= '1';
+WAIT;
 END PROCESS t_prcs_DIP_SW_6;
 
 -- DIP_SW[7]
 t_prcs_DIP_SW_7: PROCESS
 BEGIN
 	DIP_SW(7) <= '1';
+	WAIT FOR 440000 ps;
+	DIP_SW(7) <= '0';
 WAIT;
 END PROCESS t_prcs_DIP_SW_7;
 
@@ -143,6 +179,8 @@ END PROCESS t_prcs_DIP_SW_7;
 t_prcs_DIP_SW_8: PROCESS
 BEGIN
 	DIP_SW(8) <= '0';
+	WAIT FOR 440000 ps;
+	DIP_SW(8) <= '1';
 WAIT;
 END PROCESS t_prcs_DIP_SW_8;
 END lab4_arch;
