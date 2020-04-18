@@ -1,3 +1,7 @@
+-- Laboratorio 6: Decodificador de código hexadecimal a display de siete segmentos
+-- Autores: David Carneros Prado y Maria Espinosa Astilleros
+-- Desarrollo: Componente que incluye el funcionamiento del display de 7 segmentos
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;

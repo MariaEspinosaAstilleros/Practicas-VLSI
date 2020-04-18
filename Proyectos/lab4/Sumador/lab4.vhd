@@ -19,7 +19,7 @@ END lab4;
 
 ARCHITECTURE funcLab4 OF lab4 IS 
 SIGNAL Sum : STD_LOGIC_VECTOR(4 DOWNTO 0) ;         -- tamaño resultado suma más el acarreo de salida
-COMPONENT aluS                                     -- importamos nuestro componente aluS.vhd
+COMPONENT aluS                                      -- importamos nuestro componente aluS.vhd
 	PORT (X : IN STD_LOGIC_VECTOR(0 to 3);          -- primer sumando 
          Y : IN STD_LOGIC_VECTOR(0 to 3);           -- segundo sumando
          Cin : IN STD_LOGIC;                        -- acarreo de entrada
@@ -30,7 +30,5 @@ END COMPONENT;
 -- Asignamos los sumandos, los acarreos de entrada/salida y el resultado de la suma 
 -- a los elementos de la placa correspondientes
 BEGIN
- o : aluS port map (X => DIP_SW(1 To 4), Y => DIP_SW(5 to 8),               
-                                        Cin => KEY_EX(0), Cout => LED(7),
-                                        R => LED(3 downto 0));
+ o : aluS port map (X => DIP_SW(1 To 4), Y => DIP_SW(5 to 8), Cin => KEY_EX(0), Cout => LED(7), R => LED(3 downto 0));
 END funcLab4;

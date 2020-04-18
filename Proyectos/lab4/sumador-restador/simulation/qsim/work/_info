@@ -7,16 +7,16 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dE:/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim
+Z0 dE:/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim
 Ehard_block
-Z0 w1587205838
-Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
-Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
-Z7 dC:/Users/David/Desktop/Practicas-VLSI/Proyectos/lab4/sumador-restador/simulation/qsim
+Z1 w1587227168
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
+R0
 Z8 8lab4.vho
 Z9 Flab4.vho
 l0
@@ -25,21 +25,21 @@ VOgIg9T_BR7joedFDVM>H13
 !s100 A`ID_i56<Ua56=ZD=[EG=2
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1587205840
+Z11 !s110 1587227169
 !i10b 1
-Z12 !s108 1587205840.000000
+Z12 !s108 1587227169.000000
 Z13 !s90 -work|work|lab4.vho|
 Z14 !s107 lab4.vho|
 !i113 1
 Z15 o-work work
 Z16 tExplicit 1 CvgOpt 0
 Astructure
-R1
 R2
 R3
 R4
 R5
 R6
+R7
 DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
 l64
 L50
@@ -56,7 +56,6 @@ R14
 R15
 R16
 Elab4
-R0
 R1
 R2
 R3
@@ -64,6 +63,7 @@ R4
 R5
 R6
 R7
+R0
 R8
 R9
 l0
@@ -81,12 +81,12 @@ R14
 R15
 R16
 Astructure
-R1
 R2
 R3
 R4
 R5
 R6
+R7
 DEx4 work 4 lab4 0 22 GZ1KGCFF>@`oC8Q5JfdNP0
 l192
 L106
@@ -103,10 +103,10 @@ R14
 R15
 R16
 Elab4_vhd_vec_tst
-Z17 w1587205837
-R4
+Z17 w1587227167
 R5
-R7
+R6
+R0
 Z18 8Waveform.vwf.vht
 Z19 FWaveform.vwf.vht
 l0
@@ -124,13 +124,13 @@ Z21 !s107 Waveform.vwf.vht|
 R15
 R16
 Alab4_arch
-R4
 R5
+R6
 Z22 DEx4 work 16 lab4_vhd_vec_tst 0 22 LTOdSNlCXnV5?bG=8?1hK2
 l46
 L33
-VN`M_WdRA>@7LbF:JHZnjg2
-!s100 =bjMR<U5JQ=jFo?438Rka2
+Z23 VN`M_WdRA>@7LbF:JHZnjg2
+Z24 !s100 =bjMR<U5JQ=jFo?438Rka2
 R10
 32
 R11

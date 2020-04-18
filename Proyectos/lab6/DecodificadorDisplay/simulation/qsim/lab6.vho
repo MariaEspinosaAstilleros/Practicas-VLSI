@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "04/16/2020 18:38:45"
+-- DATE "04/18/2020 18:32:59"
 
 -- 
 -- Device: Altera EP4CE22F17C6 Package FBGA256
@@ -78,8 +78,8 @@ ENTITY 	lab6 IS
     PORT (
 	DIP_SW : IN std_logic_vector(5 TO 8);
 	KEY_EX : IN std_logic;
-	DP : BUFFER std_logic;
-	DISP : BUFFER std_logic_vector(1 TO 7)
+	DP : OUT std_logic;
+	DISP : OUT std_logic_vector(1 TO 7)
 	);
 END lab6;
 
@@ -366,14 +366,14 @@ PORT MAP (
 	datac => \dec|Mux6~0_combout\,
 	combout => \dec|display[7]~0_combout\);
 
--- Location: LCCOMB_X6_Y23_N30
+-- Location: LCCOMB_X6_Y23_N22
 \dec|Mux5~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|Mux5~0_combout\ = (\DIP_SW[6]~input_o\ & ((\DIP_SW[5]~input_o\ $ (!\DIP_SW[7]~input_o\)) # (!\DIP_SW[8]~input_o\))) # (!\DIP_SW[6]~input_o\ & (\DIP_SW[5]~input_o\))
+-- \dec|Mux5~0_combout\ = (\DIP_SW[6]~input_o\ & (\DIP_SW[8]~input_o\ & (\DIP_SW[5]~input_o\ $ (\DIP_SW[7]~input_o\)))) # (!\DIP_SW[6]~input_o\ & (!\DIP_SW[5]~input_o\ & ((\DIP_SW[7]~input_o\) # (\DIP_SW[8]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100011011101110",
+	lut_mask => "0011100100010000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -386,11 +386,11 @@ PORT MAP (
 -- Location: LCCOMB_X6_Y23_N24
 \dec|display[6]~1\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|display[6]~1_combout\ = (\KEY_EX~input_o\ & \dec|Mux5~0_combout\)
+-- \dec|display[6]~1_combout\ = (\KEY_EX~input_o\ & !\dec|Mux5~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010000010100000",
+	lut_mask => "0000101000001010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -398,14 +398,14 @@ PORT MAP (
 	datac => \dec|Mux5~0_combout\,
 	combout => \dec|display[6]~1_combout\);
 
--- Location: LCCOMB_X6_Y23_N18
+-- Location: LCCOMB_X6_Y23_N10
 \dec|Mux4~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|Mux4~0_combout\ = (\DIP_SW[5]~input_o\ & ((\DIP_SW[6]~input_o\) # ((\DIP_SW[7]~input_o\) # (!\DIP_SW[8]~input_o\)))) # (!\DIP_SW[5]~input_o\ & (((\DIP_SW[7]~input_o\ & !\DIP_SW[8]~input_o\))))
+-- \dec|Mux4~0_combout\ = (\DIP_SW[7]~input_o\ & (((!\DIP_SW[5]~input_o\ & \DIP_SW[8]~input_o\)))) # (!\DIP_SW[7]~input_o\ & ((\DIP_SW[6]~input_o\ & (!\DIP_SW[5]~input_o\)) # (!\DIP_SW[6]~input_o\ & ((\DIP_SW[8]~input_o\)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100100011111100",
+	lut_mask => "0011011100000010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -418,11 +418,11 @@ PORT MAP (
 -- Location: LCCOMB_X6_Y23_N4
 \dec|display[5]~2\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|display[5]~2_combout\ = (\KEY_EX~input_o\ & \dec|Mux4~0_combout\)
+-- \dec|display[5]~2_combout\ = (\KEY_EX~input_o\ & !\dec|Mux4~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101000000000",
+	lut_mask => "0000000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -430,14 +430,15 @@ PORT MAP (
 	datad => \dec|Mux4~0_combout\,
 	combout => \dec|display[5]~2_combout\);
 
--- Location: LCCOMB_X6_Y23_N22
+-- Location: LCCOMB_X6_Y23_N6
 \dec|Mux3~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|Mux3~0_combout\ = (\DIP_SW[5]~input_o\ & ((\DIP_SW[6]~input_o\ $ (\DIP_SW[8]~input_o\)) # (!\DIP_SW[7]~input_o\))) # (!\DIP_SW[5]~input_o\ & (\DIP_SW[7]~input_o\ $ (((\DIP_SW[6]~input_o\ & \DIP_SW[8]~input_o\)))))
+-- \dec|Mux3~0_combout\ = (\DIP_SW[7]~input_o\ & ((\DIP_SW[6]~input_o\ & ((\DIP_SW[8]~input_o\))) # (!\DIP_SW[6]~input_o\ & (\DIP_SW[5]~input_o\ & !\DIP_SW[8]~input_o\)))) # (!\DIP_SW[7]~input_o\ & (!\DIP_SW[5]~input_o\ & (\DIP_SW[6]~input_o\ $ 
+-- (\DIP_SW[8]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101111010111100",
+	lut_mask => "1010000101000010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -450,26 +451,26 @@ PORT MAP (
 -- Location: LCCOMB_X6_Y23_N8
 \dec|display[4]~3\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|display[4]~3_combout\ = (\KEY_EX~input_o\ & \dec|Mux3~0_combout\)
+-- \dec|display[4]~3_combout\ = (\KEY_EX~input_o\ & !\dec|Mux3~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010000010100000",
+	lut_mask => "0000000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \KEY_EX~input_o\,
-	datac => \dec|Mux3~0_combout\,
+	datad => \dec|Mux3~0_combout\,
 	combout => \dec|display[4]~3_combout\);
 
--- Location: LCCOMB_X6_Y23_N10
+-- Location: LCCOMB_X6_Y23_N2
 \dec|Mux2~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|Mux2~0_combout\ = (\DIP_SW[6]~input_o\ & (((!\DIP_SW[7]~input_o\ & \DIP_SW[8]~input_o\)) # (!\DIP_SW[5]~input_o\))) # (!\DIP_SW[6]~input_o\ & ((\DIP_SW[5]~input_o\) # ((\DIP_SW[8]~input_o\))))
+-- \dec|Mux2~0_combout\ = (\DIP_SW[6]~input_o\ & (\DIP_SW[5]~input_o\ & ((\DIP_SW[7]~input_o\) # (!\DIP_SW[8]~input_o\)))) # (!\DIP_SW[6]~input_o\ & (!\DIP_SW[5]~input_o\ & (\DIP_SW[7]~input_o\ & !\DIP_SW[8]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0111111101100110",
+	lut_mask => "1000000010011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -482,11 +483,11 @@ PORT MAP (
 -- Location: LCCOMB_X6_Y23_N28
 \dec|display[3]~4\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|display[3]~4_combout\ = (\KEY_EX~input_o\ & \dec|Mux2~0_combout\)
+-- \dec|display[3]~4_combout\ = (\KEY_EX~input_o\ & !\dec|Mux2~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101000000000",
+	lut_mask => "0000000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -494,15 +495,14 @@ PORT MAP (
 	datad => \dec|Mux2~0_combout\,
 	combout => \dec|display[3]~4_combout\);
 
--- Location: LCCOMB_X6_Y23_N6
+-- Location: LCCOMB_X6_Y23_N30
 \dec|Mux1~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|Mux1~0_combout\ = (\DIP_SW[8]~input_o\ & ((\DIP_SW[5]~input_o\ & ((!\DIP_SW[7]~input_o\))) # (!\DIP_SW[5]~input_o\ & ((\DIP_SW[7]~input_o\) # (!\DIP_SW[6]~input_o\))))) # (!\DIP_SW[8]~input_o\ & (\DIP_SW[6]~input_o\ $ (((\DIP_SW[5]~input_o\) # 
--- (\DIP_SW[7]~input_o\)))))
+-- \dec|Mux1~0_combout\ = (\DIP_SW[5]~input_o\ & ((\DIP_SW[8]~input_o\ & ((\DIP_SW[7]~input_o\))) # (!\DIP_SW[8]~input_o\ & (\DIP_SW[6]~input_o\)))) # (!\DIP_SW[5]~input_o\ & (\DIP_SW[6]~input_o\ & (\DIP_SW[7]~input_o\ $ (\DIP_SW[8]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110101010110",
+	lut_mask => "1100001010101000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -515,26 +515,26 @@ PORT MAP (
 -- Location: LCCOMB_X6_Y23_N0
 \dec|display[2]~5\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|display[2]~5_combout\ = (\KEY_EX~input_o\ & \dec|Mux1~0_combout\)
+-- \dec|display[2]~5_combout\ = (\KEY_EX~input_o\ & !\dec|Mux1~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101000000000",
+	lut_mask => "0000101000001010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \KEY_EX~input_o\,
-	datad => \dec|Mux1~0_combout\,
+	datac => \dec|Mux1~0_combout\,
 	combout => \dec|display[2]~5_combout\);
 
--- Location: LCCOMB_X6_Y23_N2
+-- Location: LCCOMB_X6_Y23_N18
 \dec|Mux0~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|Mux0~0_combout\ = (\DIP_SW[5]~input_o\ & ((\DIP_SW[6]~input_o\ $ (!\DIP_SW[7]~input_o\)) # (!\DIP_SW[8]~input_o\))) # (!\DIP_SW[5]~input_o\ & ((\DIP_SW[7]~input_o\) # ((\DIP_SW[6]~input_o\ & \DIP_SW[8]~input_o\))))
+-- \dec|Mux0~0_combout\ = (\DIP_SW[6]~input_o\ & (!\DIP_SW[7]~input_o\ & (\DIP_SW[5]~input_o\ $ (!\DIP_SW[8]~input_o\)))) # (!\DIP_SW[6]~input_o\ & (\DIP_SW[8]~input_o\ & (\DIP_SW[5]~input_o\ $ (!\DIP_SW[7]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1011011011111100",
+	lut_mask => "0100100100000010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -547,11 +547,11 @@ PORT MAP (
 -- Location: LCCOMB_X6_Y23_N20
 \dec|display[1]~6\ : cycloneive_lcell_comb
 -- Equation(s):
--- \dec|display[1]~6_combout\ = (\KEY_EX~input_o\ & \dec|Mux0~0_combout\)
+-- \dec|display[1]~6_combout\ = (\KEY_EX~input_o\ & !\dec|Mux0~0_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101000000000",
+	lut_mask => "0000000010101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
